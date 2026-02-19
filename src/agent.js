@@ -16,6 +16,7 @@ const responseBody = res => res.body;
 
 let token = null;
 const tokenPlugin = req => {
+  console.log('[VERITAS] Request (Test):', req.method, req.url);
   if (token) {
     req.set('authorization', `Token ${token}`);
   }
