@@ -3,6 +3,7 @@
 // Test #3 for Blast Radius
 // Test #4 (should show unsafe)
 // Test #5 🙄
+// Test #6 (should say unsafe)
 
 import superagentPromise from 'superagent-promise';
 import _superagent from 'superagent';
