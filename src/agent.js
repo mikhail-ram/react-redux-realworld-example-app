@@ -1,3 +1,10 @@
+// Testing Blast Radius
+// Test 2 for Blast Radius
+// Test #3 for Blast Radius
+// Test #4 (should show unsafe)
+// Test #5 🙄
+// Test #6 (should say unsafe)
+
 import superagentPromise from 'superagent-promise';
 import _superagent from 'superagent';
 
@@ -10,6 +17,7 @@ const responseBody = res => res.body;
 
 let token = null;
 const tokenPlugin = req => {
+  console.log("testing risky function change...");
   if (token) {
     req.set('authorization', `Token ${token}`);
   }
